@@ -1,0 +1,27 @@
+---
+
+git_config:
+  user:
+    name: Your Name
+    email: your-email@exemple.org
+  color:
+    branch: auto
+    diff: auto
+    interactive: auto
+    status: auto
+    ui: auto
+  core:
+    editor: vim
+    excludesfile: "~/.gitexcludesfile"
+  push:
+    default: current
+  alias:
+    clo: clone
+    co: checkout
+    st: status
+    pur: pull --rebase
+    ci: commit
+    rc: rebase --continue
+    lg: log -M --decorate --graph --oneline
+    br: branch
+    sth: stash

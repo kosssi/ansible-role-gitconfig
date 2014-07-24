@@ -1,0 +1,7 @@
+---
+
+- name: Configure .gitconfig file
+  template:
+    src=gitconfig.j2
+    dest=~/.gitconfig
+  when: git_config
