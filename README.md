@@ -1,5 +1,7 @@
 # ansible-role-gitconfig
 
+[![Build Status](https://travis-ci.org/kosssi/ansible-role-gitconfig.svg?branch=master)](https://travis-ci.org/kosssi/ansible-role-gitconfig)
+
 Ansible role to configure git.
 
 ## Role Defaults Variables
