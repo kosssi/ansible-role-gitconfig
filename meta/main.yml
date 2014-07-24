@@ -1,0 +1,18 @@
+---
+
+galaxy_info:
+  author: kosssi
+  description: Configure gitconfig and your gitignore global.
+  license: license MIT
+  min_ansible_version: 1.4
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+  categories:
+    - development
+    - system
+    - packaging
