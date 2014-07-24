@@ -1,0 +1,7 @@
+---
+
+- name: Add all gitignore files
+  template:
+    src=gitignore.j2
+    dest="{{ git_config.core.excludesfile }}"
+  when: git_ignore and git_config.core is defined and git_config.core.excludesfile is defined

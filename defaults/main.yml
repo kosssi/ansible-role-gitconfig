@@ -25,3 +25,19 @@ git_config:
     lg: log -M --decorate --graph --oneline
     br: branch
     sth: stash
+
+git_ignore:
+  - "*.log"
+  - ".vagrant"
+  # OS generated files
+  - ".DS_Store"
+  - ".DS_Store?"
+  - "._*"
+  - ".Spotlight-V100"
+  - ".Trashes"
+  - "Icon?"
+  - "ehthumbs.db"
+  - "Thumbs.db"
+  # ide
+  - "~*"
+  - ".idea/"
