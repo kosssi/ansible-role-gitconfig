@@ -1,5 +1,6 @@
 ---
 
+git_config_user: "{{ lookup('env','USER') }}"
 git_config:
   user:
     name: Your Name

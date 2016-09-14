@@ -3,5 +3,7 @@
 - name: Add all gitignore files
   template:
     src=gitignore.j2
-    dest="{{ git_config.core.excludesfile }}"
+    dest="~{{ git_config_user }}/{{ git_config.core.excludesfile | basename }}"
+    owner="{{ git_config_user }}"
+    group="{{ git_config_user }}"
   when: git_ignore and git_config.core is defined and git_config.core.excludesfile is defined

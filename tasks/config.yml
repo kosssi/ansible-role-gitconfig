@@ -3,5 +3,7 @@
 - name: Configure .gitconfig file
   template:
     src=gitconfig.j2
-    dest=~/.gitconfig
+    dest="~{{ git_config_user }}/.gitconfig"
+    owner="{{ git_config_user }}"
+    group="{{ git_config_user }}"
   when: git_config
